@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "..\\MasterCoding\\G16"
+		},
+		{
+			"path": "..\\Work proposals"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Work proposals"
+	}
+}
