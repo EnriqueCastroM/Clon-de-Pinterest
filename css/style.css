@@ -1,222 +1,235 @@
+/* Por defecto algunos elementos html tienen un padding y un margin. Al hacer el reset; */
+*{
+    margin: 0;
+    padding: 0;
+}
 /* Aqui inicia el body */
 body{
-    margin: 0;
-    color: black;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, "ＭＳ Ｐゴシック", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    font-size: 18px;
-    text-decoration: none;
-    height: 100%;
-    overflow-y: scroll;
+    font-size: 16px;
+    font-family: 'Nunito', sans-serif;
 }
-
-/* Medida del header */
+/* BARNAV */
 header{
-    height: 10%;
-}
-
-/* Medida del main */
-main{
-    height: 80%;
-}
-/* Medida del footer */
-footer{
-    height: 10%;
-}
-/* Estilo al navbar */
-#navbar-pinterest{
-    display: flex;
-    flex-direction: column;
-    padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: auto;
     width: 100%;
-    text-decoration: none;
-    list-style-type: none;
 }
-
-/* Estilo de la lista no ordenada */
-#navbar-pinterest ul.topnav{
+nav{
     display: flex;
-    flex-direction: row;
+    height: 80px;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    background-color: white;
+}
+nav a{
     text-decoration: none;
-    list-style-type: none;
-    margin: 2px;
-    padding: 10px;
+    color: black;
+    flex-grow: 1;
+    display: flex;
+    border-radius: 25px;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
 }
-
-/* Parte izquierda del navbar */
-#pinterestIcon{
-    padding: 3px;
+.item:hover{
+    background-color: #efefef;
 }
-.boton-inicio{
+.selected{
     background-color: black;
-    border-radius: 24px;
-    white-space: nowrap;
-    height: 48px;
-    min-width: 60px;
-    padding: 2px 10px 2px;
-    margin: .5rem;
-}
-
-.boton-hoy{
-    background-color: black;
-    border-radius: 24px;
-    white-space: nowrap;
-    height: 48px;
-    min-width: 60px;
-    padding: 2px 10px 2px;
-    margin: .5rem;
-}
-
-/* Parte derecha del navbar */
-#container3 li{
-    white-space: nowrap;
-    height: 48px;
-    min-width: 60px;
-    padding: 2px 10px 2px;
-    margin: .5rem;
-}
-
-/* Quitar subrayado */
-a{
-    display: block;
-    text-align: center;
-    text-decoration: none;
-    padding-top: 1vh;
     color: white;
 }
-
-/* Contenedores del navbar */
-#container1{
-    margin: 0;
-    padding: 0;
-    width: 20%;
-    display: flex;
-    flex-direction: row;
+nav img{
+    height: 24px;
 }
-
-#container2{
-    margin: 0;
-    padding: 0;
-    width: 60%;
-    display: block;
+.logo-icon{
+    margin-left: 15px;
 }
-
-#container3{
-    margin-left: 1.5%;
-    padding: 0;
-    width: 20%;
-    display: flex;
-    flex-direction: row;
+nav a i{
+    color: #767676;
+    font-size: 1.5rem;
 }
-
-/* Aqui el buscador */
-
-#findericon{
-    color: #555;
+.search{
+    flex-grow: 25;
+    margin-right: 20px;
+}
+.flechita i{
+    font-size: 1rem;
+}
+.flechita{
+    margin-right: 15px;
+    height: 30px;
+}
+.user img{
+    border-radius: 50%;
+}
+form {
+    position: relative;
+    height: 40px;
+    background: #efefef;
+    border-radius: 2rem;
     display: flex;
-    padding: 2px;
-    border: #555;
-    border-radius: 24px;
-    background-color: rgba(158,154,154,0.315);
+    align-items: center;
+    padding: 5px;
+    margin: 0 10px;
+}
+form i{
+    color: #767676;
+    font-size: 1rem;
+    margin: 0 10px;
+}
+input{
+    height: 80%;
     width: 100%;
+    border: 0;
+    font-size: 1rem;
+    background-color: #efefef;
 }
-
-input[type="search"]{
-    border: none;
-    background: transparent;
-    margin: 0;
-    width: 100%;
-    padding: 7px 8px;
-    font-size: 18px;
-    color: inherit;
-    border: 1px solid transparent;
-    border-radius: 24px;
-}
-
-input[type="search"]::placeholder{
-    color: #bbb;
-}
-
-button[type="submit"]{
-    text-indent: -999px;
-    overflow: hidden;
-    width: 40px;
-    padding: 0;
-    margin: 0;
-    border: 0px solid transparent;
-    border-radius: 24px;
-    background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat center;
-    cursor: pointer;
-    opacity: 0.7;
-}
-
-button[type="submit"]:hover{
-    opacity: 1;
-}
-
-button[type="submit"]:focus,
-input[type="search"]:focus{
-    box-shadow: 0 0 3px 0 #1183d6;
-    border-color: #1183d6;
+input:focus{
     outline: none;
 }
-
+nav a p{
+    font-weight: bold;
+}
+.links{
+    padding: 0 3px;
+}
+.boton-hoy:hover{
+    background-color: #838383;
+}
+.boton-inicio:hover{
+    background-color: #838383;
+}
+.boton-hoy:focus +a{
+    background-color: #000000;
+    color: white;
+}
+.boton-inicio:focus + a{
+    background-color: #000000;
+    color: white;
+}
 /* Galeria de imagenes */
-#content{
+main{
     display: grid; 
     grid-auto-columns: 1fr; 
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr; 
     gap: 0px 0px; 
     grid-template-areas: 
-      ". . . . . ."
-      ". . . . . ."
-      ". . . . . ."
-      ". . . . . ."
-      ". . . . . ."
-      ". . . . . ."
-      ". . . . . ."; 
+      ". . . . .";
 }
-
-#content.card-image img{
-    background-color: #ffffff;
-    margin: 5px;
-    padding: 5px;
-    height: 200px;
+section img{
+    border-radius: 15px;
 }
-
-.galeria{
-    height: 300px;
-    width: fit-content;
+section article{
+    margin-bottom: 30px;
 }
-
-/* Aqui va el FOOTER */
+.tarjeta{
+    height: 100%;
+    position: relative;
+    cursor: zoom-in;
+} 
+img{
+    border-radius: 20px;
+    max-width: 100%;
+    vertical-align: middle;
+}
+button{
+    padding: 0;
+    border: none;
+    background: none;
+}
+.buttonsave:hover{
+    background-color: #ad081b;
+}
+button:hover{
+    cursor: pointer;
+}
+.card-image{
+    position: relative;
+    z-index: 1;
+}
+.tarjeta-botones{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    background-image: black;
+    visibility: hidden;
+}
+.card-image img:hover + .tarjeta-botones{
+    visibility: visible;
+    background-image: black;
+}
+.tarjeta-botones:hover{
+    visibility: visible;
+    background-image: black;
+}
+.buttonsave{
+    background-color: #e60023;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 15px 18px;
+    border-radius: 50px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 2;
+}
+/* FOOTER */
 footer{
+    position:fixed;
+    bottom:50px;
+	right:20px;
+    height:100px;
+    width: 60px;
+    z-index: 2;
+}
+div{
     display: flex;
-    flex-direction: column-reverse;
-    background-color: whitesmoke;
-    padding: 0;
-    text-align: center;
-    margin-top: 15px;
-    width: fit-content;
+    flex-direction: column;
 }
-
-footer img{
-    width: 5%;
+.footer-icons{
+    text-decoration: none;
+	width:60px;
+	height:60px;
+	background-color: white;
+	color:black;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+    margin-bottom: 10px;
 }
-
-footer p.parrafo{
-    color: black;
-    margin-top: 0px;
-    order: 1;
+.float-icons:hover{
+    background-color: #f0f0f0;
 }
-
-footer div a{
-    padding: 0;
-    margin: 0;
+.my-float{
+	margin-top:18px;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
-
-footer div.redes{
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
+/* MEDIA QUERIES */
+@media only screen and (max-width: 850px) {
+    .search {
+        flex-grow: 1;
+        margin-right: 5px;
+    }
+    form{
+        width: 250px;
+    }
+}
+@media only screen and (max-width: 650px) {
+    .search {
+        flex-grow: 1;
+        margin-right: 5px;
+    }
+    form{
+        width: 150px;
+    }
 }

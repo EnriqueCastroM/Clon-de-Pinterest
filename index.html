@@ -1,132 +1,716 @@
 <!DOCTYPE html>
-<!-- Aqui es para cambiar el lenguaje de la pagina -->
+<!-- AQUI PARA CAMBIAR EL LENGUAJE -->
 <html lang="es">
 <!-- AQUI ALMACENAMOS TODOS LOS LINK Y METADATOS -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- AGREGA ARCHIVO DE ESTILOS -->
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Clon de pinterest</title>
+    <!-- FUENTES REFERENCIAS -->
+    <script src="https://kit.fontawesome.com/e3aa5a861d.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- HOJA DE ESTILOS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="icon" href="./Icons/pinterest.png">
+    <!-- TITULO DE LA PAGINA -->
+    <title>Pinterest Clona©2022</title>
 </head>
 
 <body>
     <header>
-        <nav id="navbar-pinterest">
-            <ul class="topnav">
-                <div id="container1">
-                    <li>
-                        <a href="https://www.pinterest.com">
-                            <img src="./Icons/pinterest.png" alt="IconodePinterest" id="pinterestIcon" height="40px" width="40px">                        
-                        </a>                   
-                    </li>
-    
-                    <li class="boton-inicio">
-                        <a href="#">
-                            Inicio
-                        </a>
-                    </li>
-    
-                    <li class="boton-hoy">
-                        <a href="#">
-                            Hoy
-                        </a>
-                    </li>
-                </div>                
-                
-                <div id="container2">
-                    <li>       
-                        <a href="#">
-                            <div id="findericon">
-                                <input type="search" placeholder="Buscar..." class="finder">
-                                <button type="submit">
-                                    <img src="./Icons/find.png" alt="Iconodelbuscador" height="24px" width="24px">
-                                </button>                    
-                                </div>
-                        </a>            
-                                
-                            
-                    </li>
-                </div>
-
-                <div id="container3">
-                    <li>
-                        <a href="#">
-                            <div id="notifications">
-                                <img src="./Icons/notification.png" alt="Notificacion" height="24px" width="24px">
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <div id="messages">
-                                <img src="./Icons/chat.png" alt="Mensajes" height="24px" width="24px">
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <div id="profile-img">                        
-                                <img src="./Icons/user.png" alt="userImage" height="24px" width="24px">
-                            </div>
-                        </a>
-                    </li>
-                    <li class="right">
-                        <a href="#">
-                           <div id="menu">
-                               <img src="./Icons/down-arrow-square-outlined-button.png" alt="Menu" height="24px" width="24px">
-                           </div>
-                        </a>
-                    </li>
-                </div>
-                
-            </ul>
-        </nav>                
+        <!-- NAVBAR -->
+        <nav>
+            <!-- LOGO -->
+            <a href="https://www.pinterest.com" class="logo-icon">
+                <img src="./Icons/pinterest.png" alt="logo">
+            </a>
+            <!-- HOME -->
+            <a href="index.html" class="home-Link">
+                <p>Home</p>
+            </a>
+            <!-- TODAY -->
+            <a href="today.html" class="Today-Link">
+                <p>Today</p>
+            </a>
+            <!-- FINDER -->
+            <form action="#" class="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder=" Find more Pins..." name="search">
+            </form>
+            <!-- NOTIFICATION -->
+            <a href="" class="ringbell">
+                <i class="fa-solid fa-bell"></i>
+            </a>
+            <!-- MSG -->
+            <a href="" class="msg">
+                <i class="fa-solid fa-comment-dots"></i>
+            </a>
+            <!-- USER -->
+            <a href="https://www.instagram.com/castorkiks" class="user-icon">
+                <img src="./Pic/yo.jpg" alt="usuario">
+            </a>
+            <!-- DROP MENU -->
+            <a href="" class="drop-icon">
+                <i class="fa-solid fa-chevron-down"></i>
+            </a> 
+        </nav>               
     </header>
     <main>
-        <section id="content">
-            <div class="card-image"><img src="./ImgGallery/1.jpg" alt="" class="galeria"></div>
-            <div class="card-image"><img src="./ImgGallery/2.jpg" alt="" class="galeria"></div>
-            <div class="card-image"><img src="./ImgGallery/3.jpg" alt="" class="galeria"></div>
-            <div class="card-image"><img src="./ImgGallery/4.jpg" alt="" class="galeria"></div>
-            <div class="card-image"><img src="./ImgGallery/5.jpg" alt="" class="galeria"></div>
-            <div class="card-image"><img src="./ImgGallery/6.jpg" alt="" class="galeria"></div>
-            <div class="card-image"><img src="./ImgGallery/7.jpg" alt="" class="galeria"></div>
-            <div class="card-image"><img src="./ImgGallery/8.jpg" alt="" class="galeria"></div>
-            <div class="card-image"><img src="./ImgGallery/9.jpg" alt="" class="galeria"></div>
-            <div class="card-image"><img src="./ImgGallery/10.jpg" alt="" class="galeria"></div>
-            <div class="card-image"><img src="./ImgGallery/11.jpg" alt="" class="galeria"></div>
-            <div class="card-image"><img src="./ImgGallery/12.jpg" alt="" class="galeria"></div>
-            <div class="card-image"><img src="./ImgGallery/13.jpg" alt="" class="galeria"></div>
-            <div class="card-image"><img src="./ImgGallery/14.jpg" alt="" class="galeria"></div>
-            <div class="card-image"><img src="./ImgGallery/15.jpg" alt="" class="galeria"></div>
-            <div class="card-image"><img src="./ImgGallery/16.jpg" alt="" class="galeria"></div>
-            <div class="card-image"><img src="./ImgGallery/17.jpg" alt="" class="galeria"></div>
-            <div class="card-image"><img src="./ImgGallery/18.jpg" alt="" class="galeria"></div>
-            <div class="card-image"><img src="./ImgGallery/19.jpg" alt="" class="galeria"></div>
-            <div class="card-image"><img src="./ImgGallery/20.jpg" alt="" class="galeria"></div>
-            <div class="card-image"><img src="./ImgGallery/21.jpg" alt="" class="galeria"></div>
-            <div class="card-image"><img src="./ImgGallery/22.jpg" alt="" class="galeria"></div>
-            <div class="card-image"><img src="./ImgGallery/23.jpg" alt="" class="galeria"></div>
-            <div class="card-image"><img src="./ImgGallery/24.jpg" alt="" class="galeria"></div>
-            <div class="card-image"><img src="./ImgGallery/25.jpg" alt="" class="galeria"></div>
-            <div class="card-image"><img src="./ImgGallery/26.jpg" alt="" class="galeria"></div>
-            <div class="card-image"><img src="./ImgGallery/27.jpg" alt="" class="galeria"></div>
-            <div class="card-image"><img src="./ImgGallery/28.jpg" alt="" class="galeria"></div>
-            <div class="card-image"><img src="./ImgGallery/29.jpg" alt="" class="galeria"></div>
-            <div class="card-image"><img src="./ImgGallery/30.jpg" alt="" class="galeria"></div>
-        </section>
+            <!-- INICIO DE LAS TAREJETAS -->
+            <section>
+                <!-- INICIO TARJETA -->
+                <article class="card-image" id="card">
+                    <div class="tarjeta">
+                        <img src="./Img/1.jpg" alt="image">
+                        <div class="gradient-overlay">
+                            <button class="btn-top" id="btn">
+                                Guardar
+                            </button>
+                            <div class="btns-btm" id="btn">
+                                <button class="btn-btm">
+                                    <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                                </button>
+                                <button class="btn-btm">
+                                    <i class="fa-solid fa-ellipsis"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="https://nextstopplease.square.site/about">
+                        <img src="./Icons/khellyuser.png" alt="usuario1">
+                        <p>Khelly </p>
+                    </a>
+                </article>
+                <!-- FIN TARJETA -->
+                <!-- INICIO TARJETA -->
+                <article class="card-image">
+                    <div class="tarjeta">
+                        <img src="./Img/2.jpg" alt="image">
+                        <div class="gradient-overlay">
+                            <button class="btn-top" id="btn">
+                                Guardar
+                            </button>
+                            <div class="btns-btm" id="btn">
+                                <button class="btn-btm">
+                                    <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                                </button>
+                                <button class="btn-btm">
+                                    <i class="fa-solid fa-ellipsis"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <!-- FIN TARJETA -->
+                <!-- INICIO TARJETA -->
+                <article class="card-image">
+                    <div class="tarjeta">
+                        <img src="./Img/3.jpg" alt="image">
+                        <div class="gradient-overlay">
+                            <button class="btn-top" id="btn">
+                                Guardar
+                            </button>
+                            <div class="btns-btm" id="btn">
+                                <button class="btn-btm">
+                                    <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                                </button>
+                                <button class="btn-btm">
+                                    <i class="fa-solid fa-ellipsis"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <!-- FIN TARJETA -->
+                <!-- INICIO TARJETA -->
+                <article class="card-image">
+                    <div class="tarjeta">
+                        <img src="./Img/4.jpg" alt="image">
+                        <div class="gradient-overlay">
+                            <button class="btn-top" id="btn">
+                                Guardar
+                            </button>
+                            <div class="btns-btm" id="btn">
+                                <button class="btn-btm">
+                                    <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                                </button>
+                                <button class="btn-btm">
+                                    <i class="fa-solid fa-ellipsis"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <!-- FIN TARJETA -->
+                <!-- INICIO TARJETA -->
+                <article class="card-image">
+                    <div class="tarjeta">
+                        <img src="./Img/5.jpg" alt="image">
+                        <div class="gradient-overlay">
+                            <button class="btn-top" id="btn">
+                                Guardar
+                            </button>
+                            <div class="btns-btm" id="btn">
+                                <button class="btn-btm">
+                                    <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                                </button>
+                                <button class="btn-btm">
+                                    <i class="fa-solid fa-ellipsis"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <!-- FIN TARJETA -->
+                <!-- INICIO TARJETA -->
+                <article class="card-image">
+                    <div class="tarjeta">
+                        <img src="./Img/6.jpg" alt="image">
+                        <div class="gradient-overlay">
+                            <button class="btn-top" id="btn">
+                                Guardar
+                            </button>
+                            <div class="btns-btm" id="btn">
+                                <button class="btn-btm">
+                                    <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                                </button>
+                                <button class="btn-btm">
+                                    <i class="fa-solid fa-ellipsis"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <section>
+                <!-- INICIO TARJETA -->
+                <article class="card-image" id="card">
+                    <div class="tarjeta">
+                        <img src="./Img/6.jpg" alt="image">
+                        <div class="gradient-overlay">
+                            <button class="btn-top" id="btn">
+                                Guardar
+                            </button>
+                            <div class="btns-btm" id="btn">
+                                <button class="btn-btm">
+                                    <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                                </button>
+                                <button class="btn-btm">
+                                    <i class="fa-solid fa-ellipsis"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <!-- FIN TARJETA -->
+                <!-- INICIO TARJETA -->
+                <article class="card-image">
+                    <div class="tarjeta">
+                        <img src="./Img/7.jpg" alt="image">
+                        <div class="gradient-overlay">
+                            <button class="btn-top" id="btn">
+                                Guardar
+                            </button>
+                            <div class="btns-btm" id="btn">
+                                <button class="btn-btm">
+                                    <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                                </button>
+                                <button class="btn-btm">
+                                    <i class="fa-solid fa-ellipsis"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="">
+                        <img src="./Pic/yo.jpg" alt="usuario1">
+                        <p>Kalsifer</p>
+                    </a>
+                </article>
+                <!-- FIN TARJETA -->
+                <!-- INICIO TARJETA 8 -->
+                <article class="card-image">
+                    <div class="tarjeta">
+                        <img src="./Img/9.jpg" alt="image">
+                        <div class="gradient-overlay">
+                            <button class="btn-top" id="btn">
+                                Guardar
+                            </button>
+                            <div class="btns-btm" id="btn">
+                                <button class="btn-btm">
+                                    <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                                </button>
+                                <button class="btn-btm">
+                                    <i class="fa-solid fa-ellipsis"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="">
+                        <img src="./Pic/jose.jfif" alt="usuario1">
+                        <p>JoséArekku</p>
+                    </a>
+                </article>
+                <!-- FIN TARJETA -->
+                <!-- INICIO TARJETA 9-->
+                <article class="card-image">
+                    <div class="tarjeta">
+                        <img src="./Img/8.jpg" alt="image">
+                        <div class="gradient-overlay">
+                            <button class="btn-top" id="btn">
+                                Guardar
+                            </button>
+                            <div class="btns-btm" id="btn">
+                                <button class="btn-btm">
+                                    <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                                </button>
+                                <button class="btn-btm">
+                                    <i class="fa-solid fa-ellipsis"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <!-- FIN TARJETA -->
+                <!-- INICIO TARJETA -->
+                <article class="card-image">
+                    <div class="tarjeta">
+                        <img src="./Img/10.jpg" alt="image">
+                        <div class="gradient-overlay">
+                            <button class="btn-top" id="btn">
+                                Guardar
+                            </button>
+                            <div class="btns-btm" id="btn">
+                                <button class="btn-btm">
+                                    <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                                </button>
+                                <button class="btn-btm">
+                                    <i class="fa-solid fa-ellipsis"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <!-- FIN TARJETA -->
+                <!-- INICIO TARJETA -->
+                <article class="card-image">
+                    <div class="tarjeta">
+                        <img src="./Img/11.jpg" alt="image">
+                        <div class="gradient-overlay">
+                            <button class="btn-top" id="btn">
+                                Guardar
+                            </button>
+                            <div class="btns-btm" id="btn">
+                                <button class="btn-btm">
+                                    <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                                </button>
+                                <button class="btn-btm">
+                                    <i class="fa-solid fa-ellipsis"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <section>
+                <!-- INICIO TARJETA -->
+                <article class="card-image" id="card">
+                    <div class="tarjeta">
+                        <img src="./Img/12.jpg" alt="image">
+                        <div class="gradient-overlay">
+                            <button class="btn-top" id="btn">
+                                Guardar
+                            </button>
+                            <div class="btns-btm" id="btn">
+                                <button class="btn-btm">
+                                    <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                                </button>
+                                <button class="btn-btm">
+                                    <i class="fa-solid fa-ellipsis"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="">
+                        <img src="./Icons/iconbitcoin.jfif" alt="usuario1">
+                        <p>SatuRNisEVol</p>
+                    </a>
+                </article>
+                <!-- FIN TARJETA -->
+                <!-- INICIO TARJETA -->
+                <article class="card-image">
+                    <div class="tarjeta">
+                        <img src="./Img/13.jpg" alt="image">
+                        <div class="gradient-overlay">
+                            <button class="btn-top" id="btn">
+                                Guardar
+                            </button>
+                            <div class="btns-btm" id="btn">
+                                <button class="btn-btm">
+                                    <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                                </button>
+                                <button class="btn-btm">
+                                    <i class="fa-solid fa-ellipsis"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <!-- FIN TARJETA -->
+                <!-- INICIO TARJETA -->
+                <article class="card-image">
+                    <div class="tarjeta">
+                        <img src="./Img/14.jpg" alt="image">
+                        <div class="gradient-overlay">
+                            <button class="btn-top" id="btn">
+                                Guardar
+                            </button>
+                            <div class="btns-btm" id="btn">
+                                <button class="btn-btm">
+                                    <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                                </button>
+                                <button class="btn-btm">
+                                    <i class="fa-solid fa-ellipsis"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="">
+                        <img src="./Pic/wil.png" alt="usuario1">
+                        <p>WillSmashs</p>
+                    </a>
+                </article>
+                <!-- FIN TARJETA -->
+                <!-- INICIO TARJETA -->
+                <article class="card-image">
+                    <div class="tarjeta">
+                        <img src="./Img/15.jpg" alt="image">
+                        <div class="gradient-overlay">
+                            <button class="btn-top" id="btn">
+                                Guardar
+                            </button>
+                            <div class="btns-btm" id="btn">
+                                <button class="btn-btm">
+                                    <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                                </button>
+                                <button class="btn-btm">
+                                    <i class="fa-solid fa-ellipsis"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <!-- FIN TARJETA -->
+                <!-- INICIO TARJETA -->
+                <article class="card-image">
+                    <div class="tarjeta">
+                        <img src="./Img/16.jpg" alt="image">
+                        <div class="gradient-overlay">
+                            <button class="btn-top" id="btn">
+                                Guardar
+                            </button>
+                            <div class="btns-btm" id="btn">
+                                <button class="btn-btm">
+                                    <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                                </button>
+                                <button class="btn-btm">
+                                    <i class="fa-solid fa-ellipsis"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <!-- FIN TARJETA -->
+                <!-- INICIO TARJETA -->
+                <article class="card-image">
+                    <div class="tarjeta">
+                        <img src="./Img/17.jpg" alt="image">
+                        <div class="gradient-overlay">
+                            <button class="btn-top" id="btn">
+                                Guardar
+                            </button>
+                            <div class="btns-btm" id="btn">
+                                <button class="btn-btm">
+                                    <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                                </button>
+                                <button class="btn-btm">
+                                    <i class="fa-solid fa-ellipsis"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <section>
+                <!-- INICIO TARJETA -->
+                <article class="card-image" id="card">
+                    <div class="tarjeta">
+                        <img src="./Img/18.jpg" alt="image">
+                        <div class="gradient-overlay">
+                            <button class="btn-top" id="btn">
+                                Guardar
+                            </button>
+                            <div class="btns-btm" id="btn">
+                                <button class="btn-btm">
+                                    <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                                </button>
+                                <button class="btn-btm">
+                                    <i class="fa-solid fa-ellipsis"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <!-- FIN TARJETA -->
+                <!-- INICIO TARJETA -->
+                <article class="card-image">
+                    <div class="tarjeta">
+                        <img src="./Img/19.jpg" alt="image">
+                        <div class="gradient-overlay">
+                            <button class="btn-top" id="btn">
+                                Guardar
+                            </button>
+                            <div class="btns-btm" id="btn">
+                                <button class="btn-btm">
+                                    <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                                </button>
+                                <button class="btn-btm">
+                                    <i class="fa-solid fa-ellipsis"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <!-- FIN TARJETA -->
+                <!-- INICIO TARJETA -->
+                <article class="card-image">
+                    <div class="tarjeta">
+                        <img src="./Img/20.jpg" alt="image">
+                        <div class="gradient-overlay">
+                            <button class="btn-top" id="btn">
+                                Guardar
+                            </button>
+                            <div class="btns-btm" id="btn">
+                                <button class="btn-btm">
+                                    <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                                </button>
+                                <button class="btn-btm">
+                                    <i class="fa-solid fa-ellipsis"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="">
+                        <img src="./Pic/bob.jfif" alt="usuario1">
+                        <p>Bobtoronja</p>
+                    </a>
+                </article>
+                <!-- FIN TARJETA -->
+                <!-- INICIO TARJETA -->
+                <article class="card-image">
+                    <div class="tarjeta">
+                        <img src="./Img/21.jpg" alt="image">
+                        <div class="gradient-overlay">
+                            <button class="btn-top" id="btn">
+                                Guardar
+                            </button>
+                            <div class="btns-btm" id="btn">
+                                <button class="btn-btm">
+                                    <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                                </button>
+                                <button class="btn-btm">
+                                    <i class="fa-solid fa-ellipsis"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <!-- FIN TARJETA -->
+                <!-- INICIO TARJETA -->
+                <article class="card-image">
+                    <div class="tarjeta">
+                        <img src="./Img/22.jpg" alt="image">
+                        <div class="gradient-overlay">
+                            <button class="btn-top" id="btn">
+                                Guardar
+                            </button>
+                            <div class="btns-btm" id="btn">
+                                <button class="btn-btm">
+                                    <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                                </button>
+                                <button class="btn-btm">
+                                    <i class="fa-solid fa-ellipsis"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <!-- FIN TARJETA -->
+                <!-- INICIO TARJETA -->
+                <article class="card-image">
+                    <div class="tarjeta">
+                        <img src="./Img/23.jpg" alt="image">
+                        <div class="gradient-overlay">
+                            <button class="btn-top" id="btn">
+                                Guardar
+                            </button>
+                            <div class="btns-btm" id="btn">
+                                <button class="btn-btm">
+                                    <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                                </button>
+                                <button class="btn-btm">
+                                    <i class="fa-solid fa-ellipsis"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="">
+                        <img src="./Pic/timmy.jfif" alt="usuario1">
+                        <p>Timmy</p>
+                    </a>
+                </article>
+                <!-- FIN TARJETA -->
+            </section>
+            <section>
+                <!-- INICIO TARJETA -->
+                <article class="card-image" id="card">
+                    <div class="tarjeta">
+                        <img src="./Img/24.jpg" alt="image">
+                        <div class="gradient-overlay">
+                            <button class="btn-top" id="btn">
+                                Guardar
+                            </button>
+                            <div class="btns-btm" id="btn">
+                                <button class="btn-btm">
+                                    <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                                </button>
+                                <button class="btn-btm">
+                                    <i class="fa-solid fa-ellipsis"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="">
+                        <img src="./Pic/chems.jfif" alt="usuario1">
+                        <p>CheemsMetroFlog</p>
+                    </a>
+                </article>
+                <!-- FIN TARJETA -->
+                <!-- INICIO TARJETA -->
+                <article class="card-image">
+                    <div class="tarjeta">
+                        <img src="./Img/25.jpg" alt="image">
+                        <div class="gradient-overlay">
+                            <button class="btn-top" id="btn">
+                                Guardar
+                            </button>
+                            <div class="btns-btm" id="btn">
+                                <button class="btn-btm">
+                                    <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                                </button>
+                                <button class="btn-btm">
+                                    <i class="fa-solid fa-ellipsis"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <!-- FIN TARJETA -->
+                <!-- INICIO TARJETA -->
+                <article class="card-image">
+                    <div class="tarjeta">
+                        <img src="./Img/26.jpg" alt="image">
+                        <div class="gradient-overlay">
+                            <button class="btn-top" id="btn">
+                                Guardar
+                            </button>
+                            <div class="btns-btm" id="btn">
+                                <button class="btn-btm">
+                                    <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                                </button>
+                                <button class="btn-btm">
+                                    <i class="fa-solid fa-ellipsis"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <!-- FIN TARJETA -->
+                <!-- INICIO TARJETA -->
+                <article class="card-image">
+                    <div class="tarjeta">
+                        <img src="./Img/27.jpg" alt="image">
+                        <div class="gradient-overlay">
+                            <button class="btn-top" id="btn">
+                                Guardar
+                            </button>
+                            <div class="btns-btm" id="btn">
+                                <button class="btn-btm">
+                                    <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                                </button>
+                                <button class="btn-btm">
+                                    <i class="fa-solid fa-ellipsis"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <!-- FIN TARJETA -->
+                <!-- INICIO TARJETA -->
+                <article class="card-image">
+                    <div class="tarjeta">
+                        <img src="./Img/28.jpg" alt="image">
+                        <div class="gradient-overlay">
+                            <button class="btn-top" id="btn">
+                                Guardar
+                            </button>
+                            <div class="btns-btm" id="btn">
+                                <button class="btn-btm">
+                                    <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                                </button>
+                                <button class="btn-btm">
+                                    <i class="fa-solid fa-ellipsis"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="">
+                        <img src="./Pic/mibb.jpg" alt="usuario1">
+                        <p>Pau 🌸 </p>
+                    </a>
+                </article>
+                <!-- FIN TARJETA -->
+                <!-- INICIO TARJETA -->
+                <article class="card-image">
+                    <div class="tarjeta">
+                        <img src="./Img/30.jpg" alt="image">
+                        <div class="gradient-overlay">
+                            <button class="btn-top" id="btn">
+                                Guardar
+                            </button>
+                            <div class="btns-btm" id="btn">
+                                <button class="btn-btm">
+                                    <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                                </button>
+                                <button class="btn-btm">
+                                    <i class="fa-solid fa-ellipsis"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <!-- FIN TARJETA -->
+            </section>
+            
     </main>
-    <footer class="contenedor" id="contacto">
-        <p class="parrafo">
-            2022 Gameboy Modding | Emuland © | All rights reserverd.
-        </p><br>
-        <div class="redes">
-            <a href="#"><img src="./Icons/img/facebook.png" alt=""></a>
-            <a href="#"><img src="./Icons/img/github.png" alt=""></a>
-            <a href="#"><img src="./Icons/img/medium.png" alt=""></a>
-            <a href="#"><img src="./Icons/img/linkedin.png" alt=""></a>
+    <footer>
+        <div>
+            <a href="" class="footer-icons">
+                <i class="fa fa-plus my-float"></i>
+            </a>
+            <a href="" class="footer-icons">
+                <i class="fa fa-question my-float"></i>
+            </a>
         </div>
     </footer>
 </body>
