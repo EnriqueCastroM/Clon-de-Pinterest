@@ -112,15 +112,13 @@ nav a p{
 }
 /* Galeria de imagenes */
 main{
-    display: grid; 
-    grid-auto-columns: 1fr; 
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
-    grid-template-rows: 1fr; 
-    gap: 0px 0px; 
-    grid-template-areas: 
-      ". . . . .";
+    display: flex; 
+   flex-direction: column;
 }
 section img{
+    border-radius: 15px;
+}
+section video{
     border-radius: 15px;
 }
 section article{
@@ -132,6 +130,11 @@ section article{
     cursor: zoom-in;
 } 
 img{
+    border-radius: 20px;
+    max-width: 100%;
+    vertical-align: middle;
+}
+section img{
     border-radius: 20px;
     max-width: 100%;
     vertical-align: middle;
@@ -163,6 +166,10 @@ button:hover{
     visibility: hidden;
 }
 .card-image img:hover + .tarjeta-botones{
+    visibility: visible;
+    background-image: black;
+}
+.card-image video:hover + .tarjeta-botones{
     visibility: visible;
     background-image: black;
 }
