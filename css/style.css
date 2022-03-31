@@ -169,10 +169,6 @@ button:hover{
     visibility: visible;
     background-image: black;
 }
-.card-image video:hover + .tarjeta-botones{
-    visibility: visible;
-    background-image: black;
-}
 .tarjeta-botones:hover{
     visibility: visible;
     background-image: black;

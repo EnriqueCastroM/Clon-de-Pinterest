@@ -101,7 +101,7 @@ button:hover{
     background-color: #ad081b;
 }
 
-.btn-btm{
+.btns-btm{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
