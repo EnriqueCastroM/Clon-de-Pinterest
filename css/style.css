@@ -65,7 +65,7 @@ nav a i{
 .user img{
     border-radius: 50%;
 }
-form {
+form{
     position: relative;
     height: 40px;
     background: #efefef;
@@ -96,6 +96,7 @@ nav a p{
 .links{
     padding: 0 3px;
 }
+/* BOTONES IZQ DEL NAVBAR */
 .boton-hoy:hover{
     background-color: #838383;
 }
@@ -110,7 +111,7 @@ nav a p{
     background-color: #000000;
     color: white;
 }
-/* Galeria de imagenes */
+/* Galeria de imagenes FORMATO*/
 main{
     display: flex; 
    flex-direction: column;
@@ -139,6 +140,7 @@ section img{
     max-width: 100%;
     vertical-align: middle;
 }
+/* SECCION DE LOS BOTONES HOVERS */
 button{
     padding: 0;
     border: none;
@@ -198,6 +200,7 @@ div{
     display: flex;
     flex-direction: column;
 }
+/* ICONOS DEL FOOTER */
 .footer-icons{
     text-decoration: none;
 	width:60px;
